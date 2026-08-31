@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>EX1 - Directorio de Usuarios</title>
+  <script scr="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Directorio de Usuarios</h1>
+
+    <form id="addUserForm">
+      <input type="text" id="newName" placeholder="Nombre" required />
+      <input type="email" id="newEmail" placeholder="Email" required />
+      <input type="text" id="newCompany" placeholder="Empresa" required />
+      <button type="submit">Agregar usuario</button>
+    </form>
+
+    <input type="text" id="filterInput" placeholder="Filtrar por nombre..." />
+
+    <table id="usersTable">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Email</th>
+          <th>Empresa</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div id="userDetail" class="detail hidden">
+      <button id="closeDetail">✕</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.7.7/dist/axios.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
